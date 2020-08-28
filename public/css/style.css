@@ -1,0 +1,43 @@
+﻿/*
+Styles for To Do's List App
+*/
+.todo{
+ padding-top: 60px;
+}
+.title h1{
+	font-weight:600 !important;
+}
+.todo-items li{
+	color:#3c3c3c;
+}
+.todo-items li:first-child{
+	color:red;
+}
+.todo-items li:hover{
+	border-color: rgba(0, 0, 0, 0.77) !important;
+	color:#4b953c;
+}
+.todo-items li:hover .action{
+	display: block
+}
+.action{
+	display: none;
+	color:#3c3c3c;
+	font-size: 15px;
+}
+
+.action a.done{
+	color: green;
+	text-decoration: none
+}
+.action a.delete{
+	color: red;
+	text-decoration: none
+}
+/* when we mark task as done we add class done to li */
+.done{
+	color: #69d069 !important;
+}
+.done .done-action{
+	display: none;
+}
